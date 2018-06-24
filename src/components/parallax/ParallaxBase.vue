@@ -12,10 +12,12 @@ export default {
 
 <style scoped>
 .ParallaxBase {
-  height:100vh;
-  overflow-x:hidden;
-  overflow-y:auto;
-	perspective:100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+	perspective: 100px;
+}
+.ParallaxBase >>> * {
   transform-style: preserve-3d;
 }
 </style>

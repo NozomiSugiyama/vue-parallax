@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>demo1</title>
+    <title>demo3</title>
     <style>
         body, div, section {
             margin: 0;
@@ -20,20 +20,24 @@
             overflow-x: hidden;
             overflow-y: auto;
         }
+        /* 追加 */
+        .base * {
+            transform-style: preserve-3d;
+        }
         .float1 {
-            transform: translateZ(0px);
+            transform: translateZ(0px) scale(1);
             z-index: 1;
         }
         .float2 {
-            transform: translateZ(30px);
+            transform: translateZ(30px) scale(0.7);
             z-index: 2;
         }
         .float3 {
-            transform: translateZ(40px);
+            transform: translateZ(40px) scale(0.6);
             z-index: 3;
         }
         .float4 {
-            transform: translateZ(50px);
+            transform: translateZ(50px) scale(0.5);
             z-index: 4;
         }
         .row {
@@ -46,7 +50,7 @@
 </head>
 <body>
     <div class="base">
-        <h1>parallax demo1</h1>
+        <h1>parallax demo3</h1>
         <section>
             <h2>100 x 100</h2>
             <div class="row">
