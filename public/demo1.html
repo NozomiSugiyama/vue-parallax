@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>demo1</title>
+    <style>
+        body, div, section {
+            margin: 0;
+        }
+        section {
+            height: 100vh;
+        }
+        img {
+            border: 1px solid black;
+        }
+        .space {
+            height: 100vh;
+        }
+        .base {
+            perspective: 100px;
+            perspective-origin: top center;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .float1 {
+            transform: translateZ(0px);
+            z-index: 1;
+        }
+        .float2 {
+            transform: translateZ(30px);
+            z-index: 2;
+        }
+        .float3 {
+            transform: translateZ(40px);
+            z-index: 3;
+        }
+        .float4 {
+            transform: translateZ(55px);
+            z-index: 4;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="base">
+        <h1>parallax demo1</h1>
+        <section>
+            <h2>100 x 100</h2>
+            <div class="row">
+                <img class="float1" src="./img/100x100.png">
+                <img class="float2" src="./img/100x100.png">
+                <img class="float3" src="./img/100x100.png">
+                <img class="float4" src="./img/100x100.png">
+            </div>
+        </section>
+        <section>
+            <h2>150 x 150</h2>
+            <div class="row">
+                <img class="float1" src="./img/150x150.png">
+                <img class="float2" src="./img/150x150.png">
+                <img class="float3" src="./img/150x150.png">
+                <img class="float4" src="./img/150x150.png">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
